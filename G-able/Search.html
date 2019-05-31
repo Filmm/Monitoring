@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Search</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
+  <link rel="stylesheet" type="text/css" href="css/Search.css">     <!-- CSS for Search page -->
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >     <!--  CSS Bootstrap-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <!--Font awesome in grid and list-->
+  
+  <script src="js/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+</head>
+
+<body style="background:#000;">
+    <div class="nav">                                                       <!--Navigation Bars-->
+      <img src="images/lisa.jpg" class="profile"></a>                   <!--User Account-->
+
+    <div class="dropdown">                                                  <!--Call JS Dropdown Logout-->
+      <img  onclick="myFunction()" class="dropbtn" src="images/dropdown.png">
+
+    <div id="myDropdown" class="dropdown-content">
+      <a href="Login.html">LOG OUT</a>
+    </div>
+    </div>
+
+          <img src="images/line.png" class="line">                                
+          <img src="images/dash.png"  class="Dashimg">      <!--Dashboard img-->
+          <a id="dashboard">Dashboard</a>
+
+          <input class="form-control mr-sm-2"  type="text" placeholder=" Search" aria-label="Search">      <!--Search bar -->
+          <img src="images/line.png" class="line1">   
+          <a href="index.html"><img src="images/reset.png" width="25" height="25" style="margin-top:10px;margin-right: 10px;">  </a>    <!--Image Reset page-->
+      
+
+    </div>   <!--Close navigation bar-->
+
+<!--PTT  GATEWAY-->
+        <span>
+          <hr class="Top_HR">  <hr class="Top_HR1">
+          <p class="Show_Result">  2  results about "DEMO"</p> 
+         </span> 
+
+        <div class="album py-5 " style="margin-top:25px;background:#262525;width: 97%;height:370px;margin-left:auto;margin-right: auto;">
+            <div class="container-fluid">
+            <div class="row">
+            <div class="col-md-6" >
+              <p class="orgName"> PTT EV DEMO 080E1095</p> 
+            <div class="card mb-4 shadow-sm" style="margin-top:-10px;border-radius:0px;" id="Frecive" > 
+            <div class="card-body" style="height:140px;">
+            <a class="fRreceived">Frames Rreceived</a>              <!--Frames Rreceived  Graph-->
+                                
+            </div>
+            </div>
+            </div>
+
+            <!-- Result for search -->
+            <div class="col-md-6">
+                <div class="boxSearch" > 
+                    <p class="EV" style="color:#4E4E4E;">EV DEMO 080E1096</p>
+                    <p class="IP" style="color:#7B7A7A;">IP : 49.229.48.168</p>
+                    <hr style="color:#C4C4C4;width:80%;margin-top:95px;">
+                    <p class="GW_id">Gatewaye ID    
+                      <br><br>RSSI 
+                      <br><br>Chanel 
+                      <br><br>Altitude 
+                      <br><br>GPS coordinates 
+                      <br><br>Last seen </a>
+
+                      <!-- Result -->
+                    <p class="GW_resut" style="color:#7B7A7A;">7276ff00080e1131</p>  
+                    <p class="RSSI_result" style="color:#7B7A7A;"> -100</p>
+                    <p class="chanel_result" style="color:#7B7A7A;">1</p> 
+                    <p class="altitude_result" style="color:#7B7A7A;">19 meters</p>
+                    <p class="GPS_result" style="color:#7B7A7A;">13.6918, 100.38086</p>
+                    <p class="status" style="color:#7B7A7A;"> a few seconde ago </p>    
+
+               </div>
+          </div>
+
+            </div>
+            </div>
+    </div>
+
+
+            <div class="col-md-6" style="margin-top:-175px;">
+            <div class="card mb-4 shadow-sm" id="GraphTran" style="border-radius:0px;width:97%;margin-left:auto;">
+            <div class="card-body" style="height:140px;" id="Ftran">
+            <a class="fTransmitted">Frames Transmitted</a>                  <!--Frames Transmitted  Graph-->
+                                                                 
+            </div>
+            </div>
+            </div>
+
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+  
+
+
+        
+<!--Navigation in Mobile Respounsive-->
+    <div class="mobile-container">
+        
+    <div class="topnav">
+      <a href="javascript:void(0);" class="icon" onclick="myFunctionResponsive()">
+          <img class="topnavimg" src="images/topnav.png" style="position:absolute;left:0px;width:30px;height:22px;">       <!-- Image Hamburger Menu -->
+          <img  class="brand"  src="images/logo.png" > </a>   <!--image Logo / Brand -->
+
+      <img class="search" src="images/search.png">      <!-- Search item-->
+
+      <div id="myLinks">
+        <img class="profile1" src="images/lisa.jpg">      <!--Account user-->
+        <a href="Login.html" style="text-decoration:none;"><button  class="logout" style="outline:none;"> LOGOUT</button></a>   <!--Link to login page-->
+      </div>
+      
+    </div>
+     
+    </div>      
+  
+
+
+</body>
+
+
+</html>
+
+

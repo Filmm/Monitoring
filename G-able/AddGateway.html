@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
+  <link rel="stylesheet" type="text/css" href="css/AddGateway.css">        <!--  CSS for Add Gateway page  -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >       <!--  CSS Bootstrap-->
+
+</head>
+
+<body style="background:#000;width: 100%">
+
+    <div class="background" style="text-align:center;">                 <!-- Background in desktop-->
+        <img  class="logo"  src="images/logo.png" >                     <!-- Logo/Brand -->
+            <p>Don't have any gateway to monitoring</p>
+            <a href="#"><img  class="add_gateway" src="images/add1.png" ></a>     <!-- Image add gateway -->
+            <p class="Text_under" style="color:#FFFFFF;">Add for start monitoring</p>
+    </div>
+
+    
+   
+    <div class="mobile-container">
+      <div class="topnav">
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <img class="topnavimg" src="images/topnav.png" style="position:absolute;left:0px;width:30px;height:22px;">        <!-- Image Hamburger Menu -->
+              <img  class="brand"  src="images/logo.png" >    <!-- Logo/Brand -->
+          </a>
+
+              <img class="search_item" src="images/search.png">       <!-- Search item -->
+
+      <div id="myLinks">
+        <img class="profile" src="images/lisa.jpg" >              <!-- Account User -->
+        <a href="#"><button  class="logout_btn" style="outline:none; text-align: center;text-decoration: none;">LOGOUT</button></a>     <!-- Dropdown Logout-->
+      </div>
+      
+      </div>
+    </div>
+    
+    
+
+
+ <!--Script for navigation bar responsive-->
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+         
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
+       
+
+</body>
+</html>

@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Monitoring</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
+  <link rel="stylesheet" type="text/css" href="css/index.css">                <!--CSS for imgage and other-->
+  <link id="grid" rel="stylesheet" type="text/css" href="css/grid.css">       <!--CSS for Grid view on responsive only  -->
+  <link id="list" rel="stylesheet" type="text/css" href="css/list.css">       <!--CSS for Grid view on responsive only  -->
+
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >              <!--  CSS Bootstrap-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">     <!--Font awesome in grid and list-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
+  <script src="js/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body style="background:#000;">
+    
+    <!--Navigation Bars-->
+    <div class="nav">    
+        
+      <!--Show User Account--> 
+      <img src="images/lisa.jpg" class="Account">                       
+
+        <!--Call JS Dropdown Logout-->
+        <div class="dropdown">   
+            <img  onclick="myFunction()" class="dropbtn" src="images/dropdown.png">
+  
+            <!--Dropdown Logout  link to Login page-->
+            <div id="myDropdown" class="dropdown-content">
+                <a href="Login.html" style="text-decoration:none;">LOG OUT</a>      
+            </div>
+
+        </div>
+                <!--Dashboard img / line / Cashboard text-->
+                <img src="images/line.png" class="line_left">                                
+                <img src="images/dash.png"  class="img_Dashboard">          
+                <a id="Text_dashboard" >Dashboard</a>
+
+                <!-- Search box -->
+                <input class="form-control mr-sm-2"  type="text" placeholder=" Search" aria-label="Search">        
+
+                <!--Line / Reset Button-->
+                <img src="images/line.png" class="line_right">   
+                <a href="index.html"><img src="images/reset.png" width="25" height="25" style="margin-top:10px;margin-right: 10px;">  </a> 
+       
+    </div>   <!--Close navigation bar-->
+
+<!---------------------------------------------------------------------  PTT ---------------------------------------------------------------->
+<!---------------------------------------------------------------------  PTT ---------------------------------------------------------------->
+<!---------------------------------------------------------------------  PTT ---------------------------------------------------------------->
+
+<article >
+    <details  >
+        <!-- Tabs PTT -->  
+        <summary class="Tabs_PTT" style="color:#262525;" onclick="changeIcon()">        
+            
+            <!--Arrow on Tabs -->
+            <img  id="top"  src="images/icon02.png" > 
+            
+            <!-- Organization name -->
+            <a class="PTT_name" style="color:#FFF;">PTT</a> 
+
+            <!-- Number and status color of gateway ( online / alway / offline ) -->
+            <div class="status_online" >
+                <div class="Number_online">2
+                </div>
+            </div>
+            
+            <div class="status_alway">
+                <div class="Number_alway">2
+                </div>
+            </div>
+        
+            <div class="status_offline">
+                <div class="Number_offline">2
+                </div>
+            </div>
+
+        </summary> 
+
+        <hr class="HR_PTT">  <!-- Line in Responsive -->
+
+        <div class="album py-5 " style="margin-top:25px;background:#000;width: 100%;height: 420px;">
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6" >
+                        <div class="card mb-4 shadow-sm" style="margin-top:-10px;" id="Graphslide"> 
+
+                        <!-- Graph -->
+                        <div class="slideshow-container ">
+                            <div class="mySlides">
+                                <img src="images/Group 3.png" style="width:100%;height: 180px;">
+                            </div>
+                                    
+                            <div class="mySlides">
+                                <img src="images/graph1.png" style="width:100%;height: 180px;">
+                            </div>
+                                    
+                        </div><br>
+                                    
+                        <div style="text-align:center;margin-top: -20px;">
+                            <span class="dot" onclick="currentSlide1(1)"></span> 
+                            <span class="dot" onclick="currentSlide1(2)"></span> 
+                        </div>
+
+                        </div>
+        
+                <!--Frames Rreceived  Layout--> 
+                <div class="card mb-4 shadow-sm" style="margin-top:-55px;border-radius:0px;background:#262525;" id="Frame_Rececive" > 
+                     <div class="card-body" style="height:140px;">
+                        <a class="Text_Received" style="color:#FFF;">Frames Received</a>                      
+                        <img src="images/graph1.png" style="width:100%;height:120px;margin-top:-25px;">                               
+                    </div>
+                </div>
+                </div>
+
+                <div class="col-md-6">
+                     <!--Topic gateway and image grid view / list view--> 
+                    <div style="background:#262525;height:50px;margin-top:-55px;border:none;width: 100%;margin-left:0;" class="Topic_gateway">Gateway 
+
+                        <!--Image Grid view / List view in Responsive-->
+                        <div id="btnContainer" style="background:#262525;">
+                           <img id="list_img" class="btn_list" src="images/list.png" onclick="listView()">  
+                           <img id="grid_img" class="btn_grid"  src="images/grid.png" onclick="gridView()">
+                        </div>
+
+                    </div>
+
+
+            <!--Scroll bar in gateway-->
+            <div class="card mb-6 shadow-sm scrollbar_PTT" style="background:#262525;width:100%;border:none;border-radius: 0px;" id="style-1" >
+                
+            <div class="container-fluid" style="padding:0;"> 
+                   
+                    <!-- Grid view and Desktop-->
+                    <div  class="grid row" style="margin-top:20px;" >
+
+                        <!-- Gateway #1 status online (green color)-->
+                            <div class="col-3" id="greenBox"  style="width: 100%; height: 100px;" onclick="openTab('b1');"  >
+                                    <a id="name">EV DEMO 080E1095</a>
+                                    <a id="ip">IP : 49.229.48.168</a>
+                                    <a id="online" style="color: #7CB269;">a few second ago</a> 
+                            </div>
+    
+                            <!-- Gateway #2 status alway (yellow color)-->
+                            <div class="col-3" id="yellowBox"  style="width: 100%;height: 100px;" onclick="openTab('b2');" >
+                                    <a id="name">EV DEMO 080E1095</a> 
+                                    <a id="ip">IP : 49.229.48.168</a>
+                                    <a id="alway" style="color: #EAB826;">a minute ago</a> 
+                            </div>
+    
+                            <!-- Gateway #3 status offline (red color)-->
+                            <div class="col-3" id="redBox"  style="width:100%;height: 100px;" onclick="openTab('b3');" >
+                                    <a id="name">EV DEMO 080E1095</a> 
+                                    <a id="ip">IP : 49.229.48.168</a>
+                                    <a id="offline" style="color: #E26666;">30 days ago</a> 
+                            </div>
+
+                    </div>
+
+          
+                <!-- Detail of gateway #1 (online)-->
+                <div class="container" id="container_conTab" style="background: #262525;">
+                    <div id="b1" class="col-12 containerTab" style="height:268px;border-color: #7CB269;">
+                        <i id="triangle_up" class="fas fa-sort-up" style="color:#7CB269;left: 60px;"></i>
+                        <span onclick="this.parentElement.style.display='none'" ><img src="images/icon.png" class="closebtn"></span>    
+                            <a class="Name_detail"> EV DEMO 080E 1095</a> 
+                            <a class="ip_detail">IP : 49.229.48.168</a>
+                               <hr class="HR">
+                           <a class="gatewayID_detail" style="color:#7B7A7A;">Gatewaye ID 
+                           <br><br>RSSI 
+                           <br><br>Chanel 
+                           <br><br>Altitude 
+                           <br><br>GPS coordinates 
+                           <br><br>Last seen </a>
+
+                           <!--Gateway Result -->
+                           <p id="GW_id">7276ff00080e1131</p>  
+                           <p id="RSSI"> -100</p>
+                           <p id="Channel">1</p> 
+                           <p id="Altitude">19 meters</p>
+                           <p id="GPS_location">13.6918, 100.38086</p>
+                           <p id="status_active"> a few second ago </p>  
+                    </div>
+                </div>
+          
+
+                <!-- Detail of gateway #2 (alway)-->
+                <div class="container" id="container_conTab" style="background: #262525;">
+                    <div id="b2" class="col-12 containerTab" style="height:268px;border-color: #EAB826;">
+                        <i id="triangle_up"  class="fas fa-sort-up" style="color:#EAB826;left: 275px;"></i>
+                        <span onclick="this.parentElement.style.display='none'"><img src="images/icon.png" class="closebtn"></span>    
+                            <a class="Name_detail"> EV DEMO 080E 1095</a> 
+                            <a class="ip_detail">IP : 49.229.48.168</a>
+                               <hr class="HR">
+                            <a class="gatewayID_detail" style="color:#7B7A7A;">Gatewaye ID 
+                           <br><br>RSSI 
+                           <br><br>Chanel 
+                           <br><br>Altitude 
+                           <br><br>GPS coordinates 
+                           <br><br>Last seen </a>
+
+                           <!--Gateway Result -->
+                           <p id="GW_id">7276ff00080e1131</p>  
+                           <p id="RSSI"> -100</p>
+                           <p id="Channel">1</p> 
+                           <p id="Altitude">19 meters</p>
+                           <p id="GPS_location">13.6918, 100.38086</p>
+                           <p id="status_active">a minute ago </p>  
+                    </div>
+                </div>
+    
+
+                <!-- Detail of gateway #3 (offline)-->
+                <div class="container" id="container_conTab" style="background: #262525;">
+                    <div id="b3" class="col containerTab" style="height:268px;border-color: #E26666;">
+                        <i id="triangle_up"  class="fas fa-sort-up" style="color:#E26666;left: 490px;"></i>
+                        <span onclick="this.parentElement.style.display='none'" ><img src="images/icon.png" class="closebtn"></span>    
+                            <a class="Name_detail"> EV DEMO 080E 1095</a> 
+                            <a class="ip_detail">IP : 49.229.48.168</a>
+                               <hr class="HR">
+                           <a class="gatewayID_detail" style="color:#7B7A7A;">Gatewaye ID 
+                           <br><br>RSSI 
+                           <br><br>Chanel 
+                           <br><br>Altitude 
+                           <br><br>GPS coordinates 
+                           <br><br>Last seen </a>
+
+                           <!--Gateway Result -->
+                           <p id="GW_id">7276ff00080e1131</p>  
+                           <p id="RSSI"> -100</p>
+                           <p id="Channel">1</p> 
+                           <p id="Altitude">19 meters</p>
+                           <p id="GPS_location">13.6918, 100.38086</p>
+                           <p id="status_active">30 days ago</p>  
+
+                    </div>
+                    
+                </div>
+
+            </div>   <!-- close container-fluid-->
+    
+
+
+                        <!-- List view -->  
+                <div id="list" class="list row" style="margin-top:20px;">                   
+    
+                    <!-- gateway #1 status online (green color)-->
+                    <div class="column" style="width:100%;margin-bottom: 10px;">
+                        <div class="col" id="gateway_greenBox"  style="width:90%;height: 100px;" onclick="openTab('b01');"  >
+                            <a id="gateway_name" style="color:#3A3939;">EV DEMO 080E1095</a> 
+                            <p id="gateway_ip" style="color:#7B7A7A;top: 5px;">IP : 49.229.48.168</p>
+                            <a id="status_online" style="color: #7CB269;">a few second ago</a> 
+                    </div>
+                               
+                        <!-- Detail of gateway #1 (online)-->
+                        <div class="container">
+                            <div id="b01" class="col containerTab" style="height:268px;background:#E8E8E8;border: 6px;border-style: solid; border-color: #7CB269;">
+                                <i id="triangle_up" class="fas fa-sort-up" style="color:#7CB269;left: 45%;right: 50%;"></i>
+                                    <span onclick="this.parentElement.style.display='none'" ><img src="images/icon.png" class="closebtn"></span>    
+                                        <a class="Name_detail"> EV DEMO 080E 1095</a> 
+                                        <a class="ip_detail">IP : 49.229.48.168</a>
+                                           <hr class="HR">
+                                       <a class="gatewayID_detail" style="color:#7B7A7A;">Gatewaye ID 
+                                       <br><br>RSSI 
+                                       <br><br>Chanel 
+                                       <br><br>Altitude 
+                                       <br><br>GPS coordinates 
+                                       <br><br>Last seen </a>
+
+                                       <!--Gateway Result -->
+                                       <p id="GW_id">7276ff00080e1131</p>  
+                                       <p id="RSSI"> -100</p>
+                                       <p id="Channel">1</p> 
+                                       <p id="Altitude">19 meters</p>
+                                       <p id="GPS_location">13.6918, 100.38086</p>
+                                       <p id="status_active"> a few second ago </p>  
+
+                            </div>
+                        </div>
+                    </div>
+                  
+                                
+                            <!-- gateway #2 status alway (yellow color)-->
+                          <div class="column" style="width: 100%;margin-bottom:10px;">
+                                <div class="col" id="gateway_yellowBox"  style="width:90%;height: 100px;" onclick="openTab('b02');" >
+                                        <a id="gateway_name" style="color:#3A3939;">EV DEMO 080E1095</a> 
+                                        <p id="gateway_ip" style="color:#7B7A7A;top: 5px;">IP : 49.229.48.168</p>
+                                        <a id="status_alway" style="color: #EAB826;">a minute ago</a> 
+                                </div>
+    
+                                 <!-- Detail of gateway #2 (alway)-->
+                                    <div class="container">   
+                                        <div id="b02" class="col containerTab" style="height:268px;background:#E8E8E8;border: 6px;border-style: solid; border-color: #EAB826;">
+                                            <i id="triangle_up"  class="fas fa-sort-up" style="color:#EAB826;left: 45%;right: 50%;"></i>
+                                                <span onclick="this.parentElement.style.display='none'" ><img src="images/icon.png" class="closebtn"></span>    
+                                                <a class="Name_detail"> EV DEMO 080E 1095</a> 
+                                                <a class="ip_detail">IP : 49.229.48.168</a>
+                                                <hr class="HR">
+                                                <a class="gatewayID_detail" style="color:#7B7A7A;">Gatewaye ID 
+                                                <br><br>RSSI 
+                                                <br><br>Chanel 
+                                                <br><br>Altitude 
+                                                <br><br>GPS coordinates 
+                                                <br><br>Last seen </a>
+
+                                                <!--Gateway Result -->
+                                                <p id="GW_id">7276ff00080e1131</p>  
+                                                <p id="RSSI"> -100</p>
+                                                <p id="Channel">1</p> 
+                                                <p id="Altitude">19 meters</p>
+                                                <p id="GPS_location">13.6918, 100.38086</p>
+                                                <p id="status_active">a minute ago </p>  
+                                       
+                                        </div>
+                                    </div>
+                          </div>
+    
+    
+                          <!-- gateway #3 status offline (red color)-->
+                          <div class="column" style="width: 100%;margin-bottom:10px;">
+                                <div class="col" id="gateway_redBox"  style="width:90%;height: 100px;" onclick="openTab('b03');" >
+                                        <a id="gateway_name" style="color:#3A3939;">EV DEMO 080E1095</a> 
+                                        <p id="gateway_ip" style="color:#7B7A7A;top: 5px;">IP : 49.229.48.168</p>
+                                        <a id="status_offline" style="color: #E26666;">30 days ago</a> 
+                                </div>
+
+                                
+                             <!-- Detail of gateway #3 (offline)-->
+                            <div class="container">
+                                <div id="b03" class="col containerTab" style="height:268px;background:#E8E8E8;border: 6px;border-style: solid; border-color: #E26666;">
+                                    <i id="triangle_up"  class="fas fa-sort-up" style="color:#E26666;left: 45%;right: 50%;"></i>
+                                    <span onclick="this.parentElement.style.display='none'" ><img src="images/icon.png" class="closebtn"></span>    
+                                        <a class="Name_detail"> EV DEMO 080E 1095</a> 
+                                        <a class="ip_detail">IP : 49.229.48.168</a>
+                                           <hr class="HR">
+                                       <a class="gatewayID_detail" style="color:#7B7A7A;">Gatewaye ID 
+                                       <br><br>RSSI 
+                                       <br><br>Chanel 
+                                       <br><br>Altitude 
+                                       <br><br>GPS coordinates 
+                                       <br><br>Last seen </a>
+
+                                       <!--Gateway Result -->
+                                       <p id="GW_id">7276ff00080e1131</p>  
+                                       <p id="RSSI"> -100</p>
+                                       <p id="Channel">1</p> 
+                                       <p id="Altitude">19 meters</p>
+                                       <p id="GPS_location">13.6918, 100.38086</p>
+                                       <p id="status_active">30 days ago</p>  
+                                </div>   
+                            </div>
+                          </div>
+    
+
+                        </div>  <!-- close row-->
+                
+                </div>  <!-- Close box style-1 // scroll bar -->
+
+                </div>  <!-- Close cover gateway text -->
+            
+            </div> <!-- Close row of graph -->
+      
+            </div> <!--Close container-fluid under gateway text -->
+
+        </div>  <!-- Close cover graph -->
+    
+    
+    
+                <!--Frames Transmitted layout-->  
+                <div class="col-md-6" style="margin-top:-270px;" id="col6">
+                    <div class="card mb-4 shadow-sm" id="GraphTransition" style="border-radius:0px;background: #262525;">
+                        <div class="card-body" style="height:140px;" id="Frame_Transmitted">
+                            <a class="Text_Transmitted" style="color:#FFF;">Frames Transmitted</a>    
+                            <img src="images/graph1.png" style="width:100%;height:120px;margin-top:-25px;">                                                 
+                        </div>
+                    </div>
+                </div>
+
+        </details>
+
+        </article >   <!-- Tabs PTT-->
+        
+    
+
+        
+<!--Navigation in Mobile Respounsive-->
+    <div class="mobile-container">
+        
+    <div class="topnav">
+      <a href="javascript:void(0);" class="icon" onclick="myFunctionResponsive()">
+        
+         <!-- Images humberger on Mobile Responsive-->
+          <img class="topnavimg" src="images/topnav.png" style="position:absolute;left:0px;width:30px;height:22px;">
+          
+          <!-- Braner (Monitoring)-->
+          <img class="logo"  src="images/logo.png" > </a>
+
+            <!-- Images of search item-->
+            <img class="search_item" src="images/search.png">
+            
+            <div id="myLinks">
+                <!-- Image of Profile user account-->
+                <img class="profile_account" src="images/lisa.jpg">
+
+                <!-- Button logout-->
+                <a href="Login.html" style="text-decoration:none;"><button  class="logout_btn" style="outline:none;"> LOGOUT</button></a>
+            </div>
+      
+    </div>
+     
+    </div>      
+
+<script>
+      
+// Graph slide show on Mobile Responsive
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function currentSlide1(n) {
+  showSlides(slideIndex = n);}
+
+function showSlides(n) {
+  var a;
+  var slides1 = document.getElementsByClassName("mySlides");
+  var dots1 = document.getElementsByClassName("dot");
+  if (n > slides1.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides1.length}
+  for (a = 0; a < slides1.length; a++) {
+      slides1[a].style.display = "none";    }
+  for (a = 0; a < dots1.length; a++) {
+      dots1[a].className = dots1[a].className.replace(" active", "");  }
+  slides1[slideIndex-1].style.display = "block";  
+  dots1[slideIndex-1].className += " active";}
+    
+</script>
+
+
+</body>
+
+</html>
+
+

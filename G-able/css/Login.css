@@ -1,0 +1,189 @@
+.background{
+position: relative;
+width: 405px;
+height: 361px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+background-color: #262525;
+border-style:solid;
+border-color: #262525;
+border-radius: 30px;
+top: 180px;}
+    @media all and (max-width:768px){
+    .background{
+    width: 100%;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #000;
+    border-style:solid;
+    border-color: #000; }  }
+
+.logo{
+width:200px;
+height:90px;    }
+
+.username {
+position: relative;
+font-family: Roboto,sans-serif;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 16px;
+width: 80%; 
+height: 40px;
+background-color: #FFF;
+border-style: solid;
+border-color: #fff;
+border-radius: 5px;
+margin-left: auto;
+margin-right: auto;
+top: 0px;}
+    @media all and (max-width:768px){
+    .username {
+    position: relative;
+    font-family: Roboto,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 16px;
+    width: 80%; 
+    height: 40px;
+    background-color: #FFF;
+    border-style: solid;
+    border-color: #fff;
+    border-radius: 5px;
+    top: 0px;}}
+    
+.password{
+position: relative;
+font-family: Roboto,sans-serif;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 16px;
+width: 80%; 
+height: 40px;
+background-color: #FFF;
+border-style: solid;
+border-color: #fff;
+border-radius: 5px;
+margin-left: auto;
+margin-right: auto;
+top: 15px;}
+    @media all and (max-width:768px){
+    .password{
+    position: relative;
+    font-family: Roboto,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 16px;
+    width: 80%; 
+    height: 40px;
+    background-color: #FFF;
+    border-style: solid;
+    border-color: #fff;
+    border-radius: 5px;
+    top: 15px;}}
+
+
+.forgot{
+position: absolute;
+top:200px;
+left: 45px;
+font-family: Roboto,sans-serif;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 14px;
+color: #C4C4C4;}
+    
+.forgot:hover{
+color: #C4C4C4;    }
+    @media all and (max-width:768px){
+    .forgot{
+    position: absolute;
+    top:200px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Roboto,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 14px;
+    color: #C4C4C4;         }
+
+.forgot:hover{
+color: #C4C4C4;     }     }
+
+
+.button{
+position: relative;
+font-family: Roboto,sans-serif;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+top: 80px;
+left: 0px;
+background-color: #656565;
+border: none;
+padding: 10px 45px;
+border-radius: 5px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+width: 80%;
+margin-left: auto;
+margin-right: auto;
+cursor: pointer;}
+    @media all and (max-width:768px){
+    .button{
+    position: relative;
+    font-family: Roboto,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    top: 95px;
+    background-color: #656565;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    width: 80%;
+    cursor: pointer; }}
+
+
+.account{
+width:200px;
+top: 315px;
+left:25%;
+color: #fff;
+position: absolute;
+font-family: Roboto,sans-serif;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 16px;}
+
+.account:visited{
+text-decoration: none;}
+
+.account:link{
+text-decoration: none;}
+    @media all and (max-width:768px){
+    .account{
+    width:200px;
+    top: 125px;
+    left:0;
+    color: #fff;
+    position: relative;
+    font-family: Roboto,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 16px;}}
+  

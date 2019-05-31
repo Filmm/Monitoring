@@ -1,0 +1,133 @@
+/*Gateway name in box*/
+#gateway_name{
+  position: relative;;
+  font-family:Roboto,sans-serif;
+  color:#4E4E4E;
+  font-size: 16px;
+  font-weight:bold;
+  line-height: normal;
+  text-decoration:none;
+  display: inline-block; 
+  width: 200px;   
+} 
+@media all and (max-width:768px){
+  #gateway_name{
+    font-size: 16px;
+    margin-top: 7px;
+  
+  }
+}
+
+  
+  /*Gateway IP in box  (List)*/
+  #gateway_ip{
+  position: relative;
+  font-family:Roboto,sans-serif;
+  width: 160px;
+  height: 20px;
+  top: 0px;
+  font-style:normal;
+  font-weight: 500;
+  line-height: normal;
+  font-size: 9px;
+}  
+@media all and (max-width:768px){
+  #gateway_ip{
+    font-size: 9px;  
+  }
+}
+  
+  /*Gateway status in box*/
+  #status_online{
+  position: relative;
+  display: block;
+  font-family:Roboto,sans-serif;
+  font-style: normal;
+  font-weight:bold;
+  line-height:normal;
+  font-size: 18px;
+  top:-5px;}
+  @media all and (max-width:768px){
+    #status_online{
+      font-size: 18px;  
+    }
+  }
+  
+  #status_offline{
+  position: relative;
+  display: block;
+  font-family:Roboto,sans-serif;
+  font-style: normal;
+  font-weight:bold;
+  line-height:normal;
+  font-size: 18px;
+  top:-5px;}
+  @media all and (max-width:768px){
+    #status_offline{
+      font-size: 18px;  
+    }
+  }
+  
+  #status_alway{
+    position: relative;
+    display: block;
+    font-family:Roboto,sans-serif;
+    font-style: normal;
+    font-weight:bold;
+    line-height:normal;
+    font-size: 18px;
+    top:-5px;}
+    @media all and (max-width:768px){
+      #status_alway{
+        font-size: 18px;  
+      }
+    }
+
+  /*--------------------------------------------------------------------------------------------------------*/
+  
+  /* Cover box on Desktop only */
+  #gateway_greenBox {
+  border-top: 12px;
+  border-top-style: solid;
+  border-top-color: #7CB269;
+  height: 103.22px;
+  cursor: pointer;
+  color: #000; 
+  margin:auto;
+  background: #FFF;
+  box-sizing: border-box; }
+   
+
+  /* Cover box on Desktop only */
+  #gateway_redBox {
+  border-top: 12px;
+  border-top-style: solid;
+  border-top-color: #E26666;
+  margin:auto;
+  height: 103.22px;
+  cursor: pointer;
+  color: #000; 
+  background: #FFF;
+  box-sizing: border-box; }
+   
+  
+  /* Gateway Box #3 (Yellow) on Desktop */
+  #gateway_yellowBox {
+  border-top: 12px;
+  border-top-style: solid;
+  border-top-color: #EAB826;
+  height: 103.22px;
+  cursor: pointer;
+  margin:auto;
+  color: #000; 
+  background: #FFF;
+  box-sizing: border-box; }
+  
+    #list{
+      display:none;
+    }
+    @media all and (max-width:768px){
+      #list {
+      display: none;
+        }
+      } 

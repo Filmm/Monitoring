@@ -1,0 +1,418 @@
+/*Gateway name in box*/
+#name{
+position: relative;;
+font-family:Roboto,sans-serif;
+color:#4E4E4E;
+font-size: 16px;
+font-weight:bold;
+padding:0;
+top:5px;
+line-height: 19px;
+text-decoration:none;
+display:block; 
+width: 200px;   
+} 
+@media all and (max-width:768px){
+#name{
+display: block;
+color: #FFF;
+overflow-wrap: break-word;
+width: 100%;
+text-align: center;
+    }
+  }
+  
+/*Gateway IP on gateway box*/
+#ip{
+position: relative;
+display: block;
+color:#7B7A7A;
+font-family:Roboto,sans-serif;
+width: 100%;
+top: 10px;
+font-style:normal;
+font-weight: 500;
+line-height: normal;
+font-size: 9px;
+}  
+@media all and (max-width:768px){
+#ip{
+text-align: center;
+color: #262525;
+top: 20px;
+    }
+  }
+  
+/*Gateway status in box (online)*/
+#online{
+position: relative;
+display: block;
+font-family:Roboto,sans-serif;
+font-style: normal;
+font-weight:bold;
+line-height:normal;
+font-size: 18px;
+text-align: center;
+top: 25px;
+}
+@media all and (max-width:768px){
+#online{
+display: none;
+  }
+}
+
+/*Gateway status in box (offline)*/
+#offline{
+position: relative;
+display: block;
+font-family:Roboto,sans-serif;
+font-style: normal;
+font-weight:bold;
+line-height:normal;
+font-size: 18px;
+text-align: center;
+top: 25px;
+}
+@media all and (max-width:768px){
+#offline{
+display: none;
+}
+  }
+
+/*Gateway status in box (alway)*/
+#alway{
+position: relative;
+display: block;
+font-family:Roboto,sans-serif;
+font-style: normal;
+font-weight:bold;
+line-height:normal;
+font-size: 18px;
+text-align: center;
+top: 25px;
+}
+@media all and (max-width:768px){
+#alway{
+display: none;
+}
+  }
+  
+  
+/*Name of gateway in detail */
+.Name_detail{
+position: absolute;
+width: 500px;
+height: 20px;
+font-family: Roboto,sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: normal;
+color: #232222;
+}
+@media all and (max-width:768px){
+.Name_detail{
+top: 10px;
+  }
+}
+
+/*Ip of gateway in detail */
+.ip_detail{
+position: absolute;
+width: 109.21px;
+height: 16.46px;
+margin-top: 25px;
+font-family: Roboto,sans-serif;
+font-style: normal;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: normal;
+  color: #4A4A4A;
+}
+@media all and (max-width:768px){
+  .ip_detail{
+  top: 10px;
+  }
+}
+
+/*Topic of gateway in detail */
+  .gatewayID_detail{
+  position: absolute;
+  width: 603px;
+  height: 86px;
+  margin-top: 65px;
+  font-family: Roboto,sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: normal;
+  color: #7B7A7A;
+}
+@media all and (max-width:768px){
+  .gatewayID_detail{
+  top: 10px;
+  }
+}  
+/*Line in show gateway detail*/
+  .HR{
+  width: 95%;
+  position: absolute;
+  margin-top: 50px;
+  left: 2.5%;  }
+  @media all and (max-width:768px){
+    .HR{
+    top: 10px;
+    }
+  }
+
+  /*Result of Gateway ID in detail */
+  #GW_id{
+  position: relative;
+  width: 100%;
+  height: 86px;
+  margin-left:100px;
+  margin-top: 65px;
+  font-family: Roboto,sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: normal;
+  color: #262525;
+}
+@media all and (max-width:768px){
+  #GW_id{
+  top: 10px;
+  }
+}
+
+/*Result of RSSI in detail */
+  #RSSI{
+  position: relative;
+  width: 100%;
+  margin-left: 50px;
+  margin-top:-75px;
+  font-family: Roboto,sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: normal;
+  color: #262525;
+}
+@media all and (max-width:768px){
+  #RSSI{
+  top: 10px;
+  }
+}
+
+/*Result of Channel in detail */
+  #Channel{
+  position: relative;
+  width: 100%;
+  margin-left: 60px;
+  margin-top: 0px;
+  font-family: Roboto,sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: normal;
+  color: #262525;
+}
+  @media all and (max-width:768px){
+    #Channel{
+    top: 10px;
+    }
+  }
+
+/*Result of Altitude in detail */
+  #Altitude{
+  position: relative;
+  width: 100%;
+  height: 86px;
+  margin-left: 70px;
+  margin-top: -5px;
+  font-family: Roboto,sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: normal;
+  color: #262525;
+}
+@media all and (max-width:768px){
+  #Altitude{
+  top: 10px;
+  }
+}
+
+/*Result of Location in detail */
+  #GPS_location{
+  position: relative;
+  width: 263px;
+  height: 86px;
+  margin-left: 120px;
+  margin-top: -70px;
+  font-family: Roboto,sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: normal;
+  color: #262525;
+}
+@media all and (max-width:768px){
+  #GPS_location{
+  top: 10px;
+  }
+}
+
+/*Result of status in detail */
+  #status_active{
+  position: relative;
+  width: 263px;
+  height: 86px;
+  margin-left: 80px;
+  margin-top: -75px;
+  font-family: Roboto,sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: normal;
+  color: #262525;
+}
+@media all and (max-width:768px){
+  #status_active{
+  top: 10px;
+  }
+}
+  
+  
+  /* Gateway Box #1 (online) */
+  #greenBox {
+  border-top: 12px;
+  border-top-style: solid;
+  border-top-color: #7CB269;
+  height: 103.22px;
+  cursor: pointer;
+  color: #000; 
+  margin:auto;
+  padding:5px;
+  padding-top: 0;
+  background: #FFF;
+   }
+  @media all and (max-width:768px){
+    #greenBox{
+    background: #7CB269;
+    }
+  }
+  
+
+  /* Gateway Box #2 (alway) */
+  #yellowBox {
+    border-top: 12px;
+    border-top-style: solid;
+    border-top-color: #EAB826;
+    height: 103.22px;
+    cursor: pointer;
+    margin:auto;
+    padding:5px;
+    padding-top: 0;
+    color: #000; 
+    background: #FFF;
+    box-sizing: border-box; }
+    @media all and (max-width:768px){
+      #yellowBox{
+      background: #EAB826;
+      }
+    } 
+
+
+  /* Gateway Box #3 (offline) */
+  #redBox {
+  border-top: 12px;
+  border-top-style: solid;
+  border-top-color: #E26666;
+  margin:auto;
+  height: 103.22px;
+  padding:5px;
+  padding-top: 0;
+  cursor: pointer;
+  color: #000; 
+  background: #FFF;
+  box-sizing: border-box; }
+  @media all and (max-width:768px){
+    #redBox{
+    background: #E26666;
+    }
+  } 
+  
+  
+  /*Box and border detail gateway*/
+  .containerTab {
+  position: relative;
+  display: none ;
+  margin-top: 10px;
+  margin-bottom:0px;
+  background:#E8E8E8;
+  border:6px;
+  padding: 15px;
+  border-style: solid;  }
+  @media all and (max-width:768px){
+    .containerTab{
+    display: none;
+    border: 4px;
+    border-style: solid; 
+    margin-top: 10px;
+    padding: 0px;  
+  }
+}
+
+/* layout adjust gateway detail in center*/
+#container_conTab{
+padding-left: 22px;
+padding-right:22px;
+}
+  @media all and (max-width:768px){
+  #container_conTab{
+    background: #262525;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+  
+  .row:after {
+  content: "";
+  display: table;
+  clear: both;  }
+  
+  /*Image close  detail box*/
+  .closebtn {
+  float: right;
+  margin-left: 200px;
+  margin-top:-10px;
+  width: 30px;
+  font-size:25px;
+  cursor: pointer;  }
+  @media all and (max-width:768px){
+    .closebtn{
+      margin-right: 0px;
+      margin-top: 5px;cursor: pointer;
+    }
+  }
+  
+ /*Grid view layout*/
+    .grid{
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+
+    /*Arrow on top gateway detail*/
+    #triangle_up{
+      font-size:40px;
+      position: absolute;
+      margin-top: -35px;
+      padding: 0;
+    }
+    @media all and (max-width:768px){
+      #triangle_up{
+        font-size:35px;
+        margin-top: -17px;
+      }
+    }

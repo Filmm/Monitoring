@@ -1,0 +1,158 @@
+.background{
+position: relative;
+width: 405px;
+height: 361px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+background-color: #262525;
+border-style:solid;
+border-color: #262525;
+border-radius: 30px;
+top: 180px;}
+  @media all and (max-width:768px){
+  .background{
+  width: 100%;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #000;
+  border-style:solid;
+  border-color: #000; }  }
+
+.logo{
+width:200px;
+height:90px;}
+  @media all and (max-width:768px){
+  .logo{
+  display: none; }  }
+
+p{
+position: relative;
+top:20px;
+left: 0px;
+font-family: Roboto,sans-serif;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+font-size: 16px;
+color: #C4C4C4;}
+  @media all and (max-width:768px){
+  p{
+  display: none; }    }
+
+
+.add_gateway{
+position: relative;
+width:75px;
+height:75px;
+top:50px;
+cursor: pointer;}
+  @media all and (max-width:768px){
+  .add_gateway{
+  top:100px;
+  outline: none;
+  cursor: pointer; }    }
+
+.Text_under{
+position: relative;
+top: 85px;
+font-family: Roboto,sans-serif;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 14px;
+color: #FFFFFF;}
+  @media all and (max-width:768px){
+  .Text_under{
+  display: block;
+  font-size: 16px;
+  top: 140px; }    }
+
+
+/*Top navigation in Mobile Responsive*/
+.mobile-container{
+display: block;    }
+
+.topnav{
+overflow: hidden;
+display: none;
+width: 100%;
+background-color: #262525;
+position: absolute;
+top: 0px; }
+    
+.topnav #myLinks {
+display: none;  }
+    
+.topnav a {
+color: white;
+padding: 30px 16px;
+text-decoration: none;
+position: relative;
+left: -5px;
+height:900px;
+font-size: 17px;
+top: 40px;
+display: block;}
+    
+.topnav a.icon {
+background: #262525;
+display: block;
+position: relative;
+right: 0;
+height:15px;
+left: 10px;
+top: 10px;}
+  @media screen and (max-width:768px){
+  .topnav{
+  display: block; }      }
+  
+  @media screen and (max-width:768px){          /*Logo monitoring*/
+  .brand{                 
+  position: relative;
+  top: -40px;
+  width: 167px;
+  height: 96px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;}  }
+  
+  @media screen and (max-width:768px){            /*Image Search*/
+  .search_item{
+  position: relative;
+  top: -25px;
+  width: 30px;
+  float: right;
+  height: 30px;   
+  display: block;
+  margin-left: auto;
+  margin-right: 10px;}  }
+  
+  @media screen and (max-width:768px){            /*Profile logout*/
+  .profile{
+  position: relative;
+  top: 160px;
+  left: 20px;
+  border-radius: 100px;
+  width: 150px;
+  height: 150px;  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;   }  }
+  
+  @media screen and (max-width:768px){          /*Logout button*/
+  .logout_btn{
+  background: #141414;
+  color: #FFF;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  text-decoration: none;
+  top: 160px;
+  width: 259px;
+  height: 35px;
+  border: 0px;
+  border-radius: 5px;  }  }

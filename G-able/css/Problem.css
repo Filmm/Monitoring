@@ -1,0 +1,178 @@
+.background{
+position: relative;
+width: 405px;
+height: 361px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+background-color: #262525;
+border-style:solid;
+border-color: #262525;
+border-radius: 30px;
+top: 180px;}
+  @media all and (max-width:768px){
+  .background{
+  width: 100%;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #000;
+  border-style:solid;
+  border-color: #000; }  }
+      
+   
+.logo{
+width:200px;
+height:90px;  }   
+  @media all and (max-width:768px){
+  .logo{
+  display: none;  }   }
+
+    
+p{
+position: absolute;
+top: 190px;
+font-family: Roboto,sans-serif;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 14px;
+left: 30%;
+color: #FFFFFF;}
+  @media all and (max-width:768px){
+  p{
+  top: 120px;}}
+
+.error{
+width:58px;
+height:58px;
+position: relative;
+text-align: center;
+margin-left: auto;
+margin-right:auto;
+top:30px;}
+
+
+.button{
+position: relative;
+font-family: Roboto,sans-serif;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+top: 120px;
+left: 0px;
+background-color: #656565;
+border: none;
+padding: 10px 45px;
+border-radius: 5px;
+text-align: center;
+display: inline-block;
+font-size: 16px;
+width: 80%;
+cursor: pointer;}
+  @media all and (max-width:768px){
+  .button{
+  position: relative;
+  font-family: Roboto,sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  top: 95px;
+  margin:0;
+  background-color: #656565;
+  border: none;
+  padding: 10px 45px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 80%;
+  cursor: pointer;}}
+
+
+/*Top navigation in Mobile Responsive*/
+.mobile-container{
+display: block;    }
+  
+.topnav{
+overflow: hidden;
+display: none;
+width: 100%;
+background-color: #262525;
+position: absolute;
+top: 0px; }
+      
+.topnav #myLinks {
+display: none;  }
+      
+.topnav a {
+color: white;
+padding: 30px 16px;
+text-decoration: none;
+position: relative;
+left: -5px;
+height:900px;
+font-size: 17px;
+top: 40px;
+display: block;}
+      
+.topnav a.icon {
+background: #262525;
+display: block;
+position: relative;
+right: 0;
+height:15px;
+left: 10px;
+top: 10px;}
+  @media screen and (max-width:768px){
+  .topnav{
+  display: block; }      }
+    
+  @media screen and (max-width:768px){          /*Logo monitoring*/
+  .brand{                 
+  position: relative;
+  top: -40px;
+  width: 167px;
+  height: 96px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;}  }
+    
+  @media screen and (max-width:768px){            /*Image Search*/
+  .search{
+  position: relative;
+  top: -25px;
+  width: 30px;
+  float: right;
+  height: 30px;   
+  display: block;
+  margin-left: auto;
+  margin-right: 10px;}  }
+    
+  @media screen and (max-width:768px){            /*Profile logout*/
+  .profile1{
+  position: relative;
+  top: 160px;
+  left: 20px;
+  border-radius: 100px;
+  width: 150px;
+  height: 150px;  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;   }  }
+    
+  @media screen and (max-width:768px){          /*Logout button*/
+  .logout{
+  background: #141414;
+  color: #FFF;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  top: 160px;
+  width: 259px;
+  height: 35px;
+  border: 0px;
+  border-radius: 5px;  }  }

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Problem</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
+  <link rel="stylesheet" type="text/css" href="css/Problem.css">              <!--  CSS for Gateway Problem page  -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >             <!--  CSS Bootstrap-->
+
+</head>
+
+<body style="background:#000;width: 100%;">
+
+    <div class="background"  style="text-align:center;">        <!-- Background in desktop-->
+
+        <img class="logo" src="images/logo.png"><br>            <!-- Logo/Brand -->
+
+        <img class="error" src="images/error.png"><br>           <!-- Image gateway error -->
+
+        <p style="text-align:center;">Gateway monitoring error!</p>
+
+        <a href="Register.html" class="button" style=" text-decoration: none;color:#FFF;">SEND A PROBLEM</a>      <!-- Link to Register page -->
+
+    </div>
+
+    
+    <div class="mobile-container">
+      <div class="topnav">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <img class="topnavimg" src="images/topnav.png" style="position:absolute;left:0px;width:30px;height:22px;">
+            <img  class="brand"  src="images/logo.png" >      <!-- Logo/Brand -->
+        </a>
+          <img class="search" src="images/search.png">        <!-- Search item -->
+  
+        <div id="myLinks">
+          <img class="profile1" src="images/lisa.jpg">          <!-- Account User -->
+
+          <a href="Login.html"><button  class="logout">LOGOUT</button></a>            <!-- Link to Login page -->
+        
+        </div>
+
+      </div>
+    </div>
+
+<script>
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+     
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
+    
+  
+
+</body>
+</html>
